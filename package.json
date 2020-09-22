@@ -1,0 +1,65 @@
+{
+	"name": "frontend-developer",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"start": "REACT_APP_ENV=development react-scripts start",
+        "build": "sh -ac './src/environment/ .env.${REACT_APP_ENV}; react-scripts build'",
+        "build:development": "REACT_APP_ENV=development npm run build",
+        "build:next": "REACT_APP_ENV=next npm run build",
+        "build:production": "REACT_APP_ENV=production npm run build",
+		"lint:scss": "stylelint '**/*.scss'; exit 0",
+		"lint:es": "eslint --ext .jsx --ext .tsx --ext .js src/",
+		"test:unit": "react-scripts test --verbose",
+		"test:cypress:run": "cypress run",
+		"test:cypress:open": "cypress open",
+		"eject": "react-scripts eject"
+	},
+	"dependencies": {
+		"@material-ui/core": "^4.11.0",
+		"@reduxjs/toolkit": "^1.4.0",
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.0.4",
+		"@testing-library/user-event": "^12.1.5",
+		"@types/jest": "^26.0.14",
+		"@types/node": "^14.11.1",
+		"@types/react": "^16.9.49",
+		"@types/react-dom": "^16.9.8",
+		"@types/react-redux": "^7.1.9",
+		"@types/react-router-dom": "^5.1.5",
+		"moment": "^2.28.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-redux": "^7.2.1",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "3.4.3",
+		"redux": "^4.0.5",
+		"redux-devtools-extension": "^2.13.8",
+		"redux-thunk": "^2.3.0",
+		"typescript": "~4.0.3"
+	},
+	"devDependencies": {
+		"cypress": "^5.2.0",
+		"eslint-config-airbnb": "^18.2.0",
+		"eslint-plugin-cypress": "^2.11.1",
+		"eslint-plugin-react": "^7.20.6",
+		"node-sass": "^4.14.1",
+		"stylelint": "^13.7.1",
+		"stylelint-order": "^4.1.0"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

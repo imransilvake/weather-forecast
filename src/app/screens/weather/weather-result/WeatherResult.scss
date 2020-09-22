@@ -1,0 +1,142 @@
+@import '../../../../assets/scss/colors.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+.wf-result {
+	.wf-loader {
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	.wf-current {
+		align-items: flex-end;
+		display: flex;
+		justify-content: center;
+		margin: 100px 0;
+
+		.wf-block1 {
+			.wf-location {
+				align-items: flex-start;
+				display: flex;
+				margin: 0 0 20px 10px;
+
+				img {
+					display: block;
+					margin-right: 5px;
+					width: 14px;
+				}
+
+				h4 {
+					font-size: fontSize(14px);
+					font-weight: 400;
+					margin: 0;
+					text-transform: uppercase;
+				}
+			}
+
+			h1 {
+				font-size: fontSize(120px);
+				line-height: .7;
+				margin: 0;
+			}
+		}
+
+		.wf-block2 {
+			margin-left: 15px;
+
+			img {
+				display: block;
+				height: 60px;
+				margin: 0 auto;
+				width: 60px;
+			}
+
+			p {
+				font-size: fontSize(13px);
+				margin: 5px 0 0;
+				text-align: center;
+				text-transform: capitalize;
+			}
+		}
+	}
+
+	.wf-forecast {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 70px;
+
+		.wf-item {
+			text-align: center;
+
+			h4 {
+				font-size: fontSize(15px);
+				font-weight: 400;
+				margin: 0;
+				text-transform: uppercase;
+			}
+
+			img {
+				display: block;
+				height: 35px;
+				margin: 12px 0;
+				width: 35px;
+			}
+
+			h6 {
+				font-size: fontSize(14px);
+				font-weight: 400;
+				margin: 0;
+			}
+		}
+	}
+
+	.wf-error {
+		margin-top: 100px;
+		text-align: center;
+		word-break: break-word;
+
+		h1 {
+			font-size: fontSize(60px);
+			line-height: 1;
+			margin: 0;
+		}
+
+		p {
+			color: var(--c5);
+			font-weight: 500;
+			margin: 5px 0 0;
+			text-transform: uppercase;
+		}
+	}
+
+	// media
+	@media (max-width: 500px) {
+		.wf-forecast {
+			display: block;
+			padding: 0 40px;
+
+			.wf-item {
+				border-bottom: 1px solid var(--c3);
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+
+				&:last-child {
+					border: none;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+
+				img {
+					margin: -5px 0 0;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 400px) {
+		.wf-forecast {
+			padding: 0 10px;
+		}
+	}
+}

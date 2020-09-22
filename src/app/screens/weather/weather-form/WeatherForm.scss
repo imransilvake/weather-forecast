@@ -1,0 +1,30 @@
+@import '../../../../assets/scss/colors.scss';
+
+.wf-form {
+	align-items: flex-end;
+	display: flex;
+	margin-top: 60px;
+
+	.wf-search {
+		display: block;
+		width: 35px;
+	}
+
+	.wf-input-wrapper {
+		margin: 0 15px;
+		width: 100%;
+
+		.wf-input {
+			&::before {
+				border-bottom: 2px solid var(--c4);
+			}
+		}
+	}
+
+	.wf-button {
+		border-radius: 15px;
+		font-weight: 300;
+		padding: 3px 30px;
+		text-transform: capitalize;
+	}
+}
