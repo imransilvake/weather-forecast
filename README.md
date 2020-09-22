@@ -1,59 +1,31 @@
-# Coding Challenge
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Task
-
-You will be creating _Weather App_ that shows the current weather and the 5-day forecast of the location users type in the search field.
+# Weather Forecast
+A _Weather App_ that shows the current weather and the 5-day forecast of the location users type in the search field.
 
 ![](./src/assets/images/WeatherApp.jpg)
 
-## Acceptance Criteria
 
-* The implementation shouldn't be 100% pixel perfect, although the page should look very similar to the screenshot above.
-* The website should look nice on all screens (there is no rule book for that, just use your style feeling creativity).
-* The website should work in all modern browsers.
-* Please write at least 1 unit test with JEST and 1 e2e test with Cypress
-* Optional: requests can be cached in browser.
-* Linters, prettifiers, etc. are not mandatory, but highly recommended.
+## Content
 
-## Tips
+- [X] Wrap the project into a Docker container
+- [X] Use of Redux to keep the state of the application
+- [X] The website is responsive and look nice on all screens
+- [X] The website works in all modern browsers
+- [X] Unit tests with JEST and E2E tests with Cypress
+- [X] Optional: requests are cached in browser (localstorage)
+- [X] Linters, prettifiers, etc. are not mandatory, but highly recommended.
 
-* For weather data you may use https://openweathermap.org/.
-* For icons you may use https://www.flaticon.com/.
-* For fonts you may use https://fonts.google.com/.
-* Use your UI/UX experience to make the page user fiendly.
-* You are an expert, show your skills! Want to wrap the project into a Docker container, do it. Want to use Redux, why not? But be prepared to explain why you made your decisions.
 
-## Contact
+## Libraries and Frameworks
 
-Please ask questions if you have any.
+#### External 
+- [X] [Create React App](https://github.com/facebook/create-react-app)
+- [X] [Redux Toolkit](https://redux-toolkit.js.org/)
+- [X] [Redux Devtools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
+- [X] [TypeScript](https://www.typescriptlang.org/)
+- [X] [Material-UI](https://material-ui.com/)
+- [X] [Cypress](https://www.cypress.io)
+- [X] [Jest Fetch Mock](https://github.com/jefflau/jest-fetch-mock/)
 
-Good luck!
+
+## Information
+Check [React-Seed](https://github.com/imransilvake/React-Seed) to understand how to build and serve this project as well as how to use SCSS and JS linting.
