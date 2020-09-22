@@ -1,7 +1,7 @@
 # Weather Forecast
 A Weather App that shows the current weather and the 5-day forecast of the location users type in the search field. The [openweathermap](https://openweathermap.org/current/) API is used to fetch the current and forecast weather data. For E2E testing, Cypress is used.
 
-![](./src/assets/images/WeatherApp.jpg)
+![](./preview.png)
 
 
 ## Content
