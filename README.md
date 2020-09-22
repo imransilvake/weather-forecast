@@ -15,6 +15,12 @@ A Weather App that shows the current weather and the 5-day forecast of the locat
 - [X] Linters, prettifiers, etc. are not mandatory, but highly recommended.
 
 
+## Unit & E2E Tests
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](unit-test.png)  |  ![](e2e-test.png)
+
+
 ## Libraries and Frameworks
 
 #### External 
