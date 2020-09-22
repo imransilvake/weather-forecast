@@ -16,7 +16,7 @@ A Weather App that shows the current weather and the 5-day forecast of the locat
 
 
 ## Unit & E2E Tests
-Solarized dark             |  Solarized Ocean
+Unit Tests             |  E2E Tests
 :-------------------------:|:-------------------------:
 ![](unit-test.png)  |  ![](e2e-test.png)
 
