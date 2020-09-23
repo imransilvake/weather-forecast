@@ -79,9 +79,7 @@ const WeatherResult: FC = () => {
 	return (
 		<section className="wf-result">
 			{/* Loader */}
-			{
-				loading && <Loader />
-			}
+			{ loading && <Loader />}
 
 			{/* Current */}
 			{
