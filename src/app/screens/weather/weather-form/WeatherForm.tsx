@@ -67,7 +67,7 @@ const WeatherForm: FC = () => {
 				className="wf-button"
 				type="submit"
 				variant="contained"
-				color="primary">
+				color="secondary">
 				Search
 			</Button>
 		</form>

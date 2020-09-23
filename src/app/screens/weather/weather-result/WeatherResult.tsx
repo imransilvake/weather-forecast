@@ -2,13 +2,11 @@
 import React, { FC, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-// material
-import CircularProgress from '@material-ui/core/CircularProgress';
-
 // app
 import './WeatherResult.scss';
 import WeatherIcon from './WeatherIcon';
 import PinIcon from '../../../../assets/svg/pin.svg';
+import Loader from '../../../components/Loader';
 import { AppOptions, AppServices } from '../../../../app.config';
 import { WRDataInterface, WRItemInterface } from './weatherResult.interface';
 import { convertToDay } from '../../../utilities/Helpers';
@@ -82,9 +80,7 @@ const WeatherResult: FC = () => {
 		<section className="wf-result">
 			{/* Loader */}
 			{
-				loading && (
-					<div className="wf-loader"><CircularProgress /></div>
-				)
+				loading && <Loader />
 			}
 
 			{/* Current */}

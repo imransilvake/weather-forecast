@@ -8,13 +8,13 @@ import WeatherResult from './weather-result/WeatherResult';
 
 const Weather: FC = () => {
 	return (
-		<section className="wf-wrapper">
+		<div className="wf-wrapper">
 			{/* Form */}
 			<WeatherForm />
 
 			{/* Result */}
 			<WeatherResult />
-		</section>
+		</div>
 	);
 };
 export default Weather;
